@@ -1,0 +1,48 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<div class="inner-banner bg-shape3 bg-color3">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="conatiner">
+                <div class="inner-title text-center">
+                    <h3>Registrate</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><i class="fas fa-chevron-right"></i></li>
+                        <li>Registro</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card text-center">
+        <td bgcolor="blue">
+        <div class="card-header">
+        <B style="color:aliceblue;">INGRESO</B>
+        </div>
+        </td>
+        <div clases="card-body p-4">
+          <label style="float: left;">Correo</label>
+         <input class ="form-control m-2"type="email" placeholder="Ingrese un email  " [(ngModel)]="usuario.email" >
+
+            <label style="float: left;">Contraseña</label>
+          <input class ="form-control m-2" type="password" placeholder="Ingrese un password  " [(ngModel)]="usuario.password">
+
+          <button class ="btn btn-secondary btn-block m-2 "(click)="ingresar()">INGRESAR CON CORREO <img src="https://i.pinimg.com/originals/23/98/2d/23982d31ee932c26a021b175c47bb157.png" height ="40" width="50" /></button>
+          <BR><button class ="btn btn-danger btn-block m-2 "(click)="ingresarConGoogle()">INGRESAR CON GOOGLE <img src="https://www.terabyte2003.com/wp-content/uploads/2018/05/Gmail-1170x882.png" height ="40" width="50" /></button>
+          <BR><button class ="btn btn-primary btn-block m-2 "(click)="ingresarConFacebok()">INGRESAR CON FACEBOOK <img src="https://www.facebook.com/images/fb_icon_325x325.png" height ="40" width="50" /></button>
+            <BR><button class ="btn btn-light green btn-block m-2 "(click)="ingresarConGithub()">INGRESAR CON GITHUB <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height ="40" width="50" /></button>
+          <div>
+          <label >AUN NO TIENES CUENTA? <a href="https://support.google.com/accounts/answer/27441?hl=es-419">REGISTRARSE</a></label>
+          </div>
+          <div>
+            <!--<button class="btn btn-info btn-block m2" (click)="obtenerUsuarioLogeado()">Usuario Logeado</button>
+            --><button class="btn btn-info btn-block m2"(click)="logout()">Logout </button>
+          </div>
+      </div>
+    </div>
+    </div>
+
